@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kreeshma k | Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  <style>
+	header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+	}
+
+    :root {
+      --primary: #0d6efd;
+      --dark: #212529;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h1, h2, h3 {
+      color: var(--dark);
+      margin-bottom: 15px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--dark);
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KREESHMA K</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="photo.jpeg" alt="kreeshma k" class="profile-img" />
+    <h2>Front-End Web Developer</h2>
+    <p>I build modern, responsive websites with a focus on performance and UX.</p>
+  </section>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a front-end web developer specializing in responsive, user-centered web applications. With a solid background in HTML, CSS, and JavaScript, I enjoy crafting seamless digital experiences with clean and efficient code.</p>
+    </section>
+	<section id="education">
+  <h2>Education</h2>
+  <table style="width:100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #f0f0f0;">
+        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Degree</th>
+        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Institution</th>
+        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">BSC.IT</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Fatima college,madurai</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">2024</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">Higher Secondary (HSC)</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Raja matric Higher Secondary school,kunjarvalasai</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">2021</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px; border: 1px solid #ddd;">Secondary School (SSLC)</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">Raja Matric Higher Secondary School,kunjarvalasai</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">2019</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg" alt="Project One Screenshot">
+          <h3>Project One</h3>
+          <p>Developed a responsive project management dashboard using React. Features include task tracking, team collaboration, and real-time analytics.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://img.freepik.com/free-photo/online-web-design_53876-95309.jpg?semt=ais_hybrid&w=740" alt="Project Two Screenshot">
+          <h3>Project Two</h3>
+          <p>Created a landing page for a web design agency using HTML, CSS, and JavaScript, optimized for performance and SEO.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>React & Vue</li>
+        <li>Node.js & Express</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kreeshmakrees006@gmail.com">kreeshmakrees006@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/kreeshma" target="_blank">kreeshma kalyani</a></p>
+	  <p>GitHub: <a href="https://github.com/kreesh-ma" target="_blank">kreesh-ma</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 kreeshma k. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
