@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kreesh | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Intro/Welcome Section -->
+  <section class="intro">
+    <div class="intro-left">
+      <div class="badges">
+        <span class="badge-dot">● SYSTEM READY</span>
+        <span class="badge">PORTFOLIO 2026</span>
+        <span class="badge">UI LOADING</span>
+      </div>
+
+      <h1>Welcome to<br>my Portfolio<br>Website</h1>
+
+      <p>Building clean, reliable, and functional digital experiences
+         with a focus on solid engineering and thoughtful design.</p>
+
+      <span class="live-status">LIVE STATUS</span>
+
+      <div class="intro-buttons">
+        <a href="#projects" class="pill-btn">&lt;/&gt; CODE</a>
+        <a href="#home" class="pill-btn">👤 PROFILE</a>
+        <a href="https://github.com/kreesh-ma" class="pill-btn">⟳ SOURCE</a>
+      </div>
+
+      <a href="https://kreesh-ma.github.io/portfolio/" class="site-link">🌐 https://kreesh-ma.github.io/portfolio/</a>
+    </div>
+
+    <div class="intro-right">
+      <div class="core-ui">
+        <div class="core-header">
+          <span>CORE UI</span>
+          <span class="online">● ONLINE</span>
+        </div>
+
+        <div class="orbit-wrap">
+          <div class="orbit-circle">
+            <div class="orbit-center">WELCOME</div>
+            <div class="orbit-icon icon1">📶</div>
+            <div class="orbit-icon icon2">⚙️</div>
+            <div class="orbit-icon icon3">💻</div>
+            <div class="orbit-icon icon4">✎</div>
+          </div>
+        </div>
+
+        <div class="core-stats">
+          <div class="stat-box">
+            <div class="stat-num" id="loadedNum">00</div>
+            <div class="stat-label">Loaded</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">12ms</div>
+            <div class="stat-label">Stable</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">@kreeshma</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active"><span>🏠</span> Home</a></li>
+      <li><a href="#about"><span>👤</span> About</a></li>
+      <li><a href="#projects"><span>📁</span> Projects</a></li>
+      <li><a href="#simulations"><span>⚙️</span> Job Simulations</a></li>
+      <li><a href="#services"><span>🛠️</span> Skills & Certifications</a></li>
+      <li><a href="#contact"><span>✉️</span> Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <span class="badge">Available for work</span>
+      <h1>Hi, I'm Kreeshma</h1>
+      <h2>Software Developer</h2>
+      <p>I build clean, functional, and user-focused digital experiences.
+         Fresher with hands-on experience in Python, Django, MySQL, and OpenCV —
+         I bring ideas to life through solid engineering and thoughtful design.</p>
+
+      <div class="hero-info">
+        <span>📍 Tamil Nadu, India</span>
+        <span>💼 Available Now</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Hire Me</a>
+        <a href="Kreesh-Resume.pdf" download class="btn-secondary">Download CV</a>
+      </div>
+
+       <div class="follow-me">
+      <a href="https://github.com/kreesh-ma" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kreeshma" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="profile.jpg" alt="Kreesh" class="hero-img">
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hi! I'm Kreesh, a recently graduated MCA student and aspiring
+           Software Developer based in Tamil Nadu, India.</p>
+
+        <p>I completed my MCA with a CGPA of 9.09, and during my final year
+           I built and published a research paper on my project
+           "E-Voting Using Face Recognition" in IJSART.</p>
+
+        <p>I'm passionate about backend development, clean code, and solving
+           real-world problems through technology.</p>
+
+        <p>Right now, I'm sharpening my skills in:</p>
+
+        <ul class="skills-list">
+          <li># Python, Django, MySQL for backend development</li>
+          <li># OpenCV, Machine Learning basics</li>
+          <li># HTML, CSS, JavaScript for frontend</li>
+          <li># DSA, SQL, and problem solving</li>
+        </ul>
+      </div>
+
+      <div class="about-img">
+        <img src="profile.jpg" alt="Kreesh">
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card project-card-featured">
+        <div class="project-img">
+          <img src="evoting-preview.png" alt="AI EVM Preview">
+        </div>
+        <div class="project-info">
+          <h3>E-Voting Using Face Recognition</h3>
+          <p>Secure e-voting system using face recognition (Haar Cascade + LBPH),
+             AES encryption & SHA-256 hashing. Published in IJSART.</p>
+          <ul class="project-features">
+            <li>Facial biometric authentication for voter verification</li>
+            <li>AI-powered booth verification (person + mask + face detection)</li>
+            <li>AES encryption & SHA-256 for vote security</li>
+            <li>Admin dashboard for election management</li>
+          </ul>
+          <div class="tags">
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>OpenCV</span>
+            <span>Face Recognition</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kreesh-ma/AI_EVM" target="_blank" class="project-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Job Simulations Section -->
+  <section id="simulations" class="simulations">
+    <h2 class="section-title">Job Simulations</h2>
+
+    <div class="cert-scroll-wrapper">
+      <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Wells Fargo — Software Engineering</h3>
+        <p>Forage virtual simulation covering real-world software
+           engineering tasks and workflows.</p>
+        <div class="tags">
+          <span>Forage</span>
+          <span>Software Engineering</span>
+        </div>
+        <div class="cert-preview">
+          <iframe src="wells-fargo-cert.pdf" title="Wells Fargo Certificate"></iframe>
+          <a href="wells-fargo-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>TATA — Cybersecurity</h3>
+        <p>Forage virtual simulation on cybersecurity fundamentals
+           and threat analysis.</p>
+        <div class="tags">
+          <span>Forage</span>
+          <span>Cybersecurity</span>
+        </div>
+        <div class="cert-preview">
+          <iframe src="tata-cert.pdf" title="TATA Certificate"></iframe>
+          <a href="tata-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Deloitte — Technology</h3>
+        <p>Forage virtual simulation covering practical coding and development tasks</p>
+        <div class="tags">
+          <span>Forage</span>
+          <span>Technology</span>
+        </div>
+        <div class="cert-preview">
+          <iframe src="deloitte-cert.pdf" title="Deloitte Certificate"></iframe>
+          <a href="deloitte-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2 class="section-title">Skills & Certifications</h2>
+
+    <div class="cert-scroll-wrapper">
+      <div class="service-grid">
+
+      <div class="service-card">
+        <h3>Python & SQL</h3>
+        <p>Certified by SCALAR</p>
+        <div class="cert-preview">
+          <iframe src="scalar-cert.pdf" title="Python & SQL Certificate"></iframe>
+          <a href="scalar-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>DBMS</h3>
+        <p>Certified by Infosys Springboard</p>
+        <div class="cert-preview">
+          <iframe src="infosys-dbms-cert.pdf" title="DBMS Certificate"></iframe>
+          <a href="infosys-dbms-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Artificial Intelligence</h3>
+        <p>Certified by Infosys Springboard</p>
+        <div class="cert-preview">
+          <iframe src="infosys-ai-cert.pdf" title="AI Certificate"></iframe>
+          <a href="infosys-ai-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Data Structures & Algorithms</h3>
+        <p>Certified by ExcelR</p>
+        <div class="cert-preview">
+          <iframe src="excelr-dsa-cert.pdf" title="DSA Certificate"></iframe>
+          <a href="excelr-dsa-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Python for Data Science</h3>
+        <p>Certified by Infosys Springboard</p>
+        <div class="cert-preview">
+          <iframe src="infosys-python-cert.pdf" title="Python Certificate"></iframe>
+          <a href="infosys-python-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>PHP & MySQL</h3>
+        <p>Spoken Tutorial</p>
+        <div class="cert-preview">
+          <iframe src="php-mysql-cert.pdf" title="PHP & MySQL Certificate"></iframe>
+          <a href="php-mysql-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Course Certificate</h3>
+        <p>IICT</p>
+        <div class="cert-preview">
+          <iframe src="iict-cert.pdf" title="IICT Certificate"></iframe>
+          <a href="iict-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Coursera Certificate 1</h3>
+        <p>Coursera</p>
+        <div class="cert-preview">
+          <iframe src="coursera-1-cert.pdf" title="Coursera Certificate"></iframe>
+          <a href="coursera-1-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Coursera Certificate 2</h3>
+        <p>Coursera</p>
+        <div class="cert-preview">
+          <iframe src="coursera-2-cert.pdf" title="Coursera Certificate"></iframe>
+          <a href="coursera-2-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <h3>Academic Certificate</h3>
+        <p>University</p>
+        <div class="cert-preview">
+          <iframe src="main-cert.pdf" title="Academic Certificate"></iframe>
+          <a href="main-cert.pdf" target="_blank" class="cert-link"><i class="fa-solid fa-expand"></i> View Certificate</a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <p>Let's connect! I'm open to discussing job opportunities,
+           freelance work, and collaborations.</p>
+
+        <div class="info-item">📧 kreeshmakrees006@gmail.com</div>
+        <div class="info-item">📱 +91 8825564479</div>
+        <div class="info-item">📍 Chennai,Tamil Nadu, India</div>
+
+        <div class="social-icons">
+<a href="https://github.com/kreesh-ma" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kreeshma" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xrpgldqq" method="POST">
+        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Kreeshma. All rights reserved.</p>
+  </footer>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
