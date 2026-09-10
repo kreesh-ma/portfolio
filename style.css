@@ -845,7 +845,7 @@ h1, h2, h3 {
 
 /* Scrollable certificate section */
 .cert-scroll-wrapper {
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: auto;
   padding-right: 10px;
   scrollbar-width: thin;
