@@ -921,6 +921,53 @@ h1, h2, h3 {
   font-size: 14px;
 }
 
+/* Simulation cards */
+.simulation-card {
+  background: linear-gradient(160deg, #2b0410, #1a0309);
+  padding: 30px 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 77, 109, 0.12);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.simulation-card:hover {
+  border-color: #ff4d6d;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(255, 77, 109, 0.15);
+}
+
+.simulation-card h3 {
+  color: #ff4d6d;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.simulation-card p {
+  color: #d8b4bd;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.simulation-card .tags {
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.simulation-card .cert-preview {
+  margin-top: 15px;
+  border-top: 1px solid rgba(255, 77, 109, 0.15);
+  padding-top: 15px;
+}
+
+.simulation-card .cert-preview iframe {
+  width: 100%;
+  height: 180px;
+  border: 1px solid rgba(255, 77, 109, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
 /* Contact */
 .contact-content {
   display: flex;

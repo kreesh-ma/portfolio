@@ -143,7 +143,7 @@ if (roleEl) {
   type();
 }
 // Reveal animations
-const revealEls = document.querySelectorAll('.project-card, .service-card, .about-content, .hero-left, .hero-right, .contact-content, .intro-left, .intro-right, .core-ui');
+const revealEls = document.querySelectorAll('.project-card, .service-card, .simulation-card, .about-content, .hero-left, .hero-right, .contact-content, .intro-left, .intro-right, .core-ui');
 revealEls.forEach(el => el.classList.add('reveal'));
 
 const observer = new IntersectionObserver((entries) => {
