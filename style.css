@@ -80,8 +80,8 @@ h1, h2, h3 {
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 12px 30px;
+  gap: 16px;
+  padding: 12px 24px;
   background: rgba(21, 3, 8, 0.65);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
@@ -92,6 +92,14 @@ h1, h2, h3 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, top 0.4s ease, box-shadow 0.3s ease;
+  max-width: 95vw;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar.show {
@@ -118,11 +126,12 @@ h1, h2, h3 {
   gap: 6px;
   color: #e8d5d9;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 30px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -1136,7 +1145,7 @@ h1, h2, h3 {
   }
 
   .navbar {
-    gap: 10px;
+    gap: 6px;
     padding: 10px 16px;
   }
 
