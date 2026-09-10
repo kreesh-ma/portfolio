@@ -723,6 +723,7 @@ h1, h2, h3 {
   flex: 0 0 320px;
   position: relative;
   overflow: hidden;
+  height: 350px;
 }
 
 .project-card-featured .project-img img {
