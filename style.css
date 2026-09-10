@@ -642,38 +642,8 @@ h1, h2, h3 {
 /* Project cards */
 .project-grid {
   display: flex;
+  flex-direction: column;
   gap: 25px;
-  overflow-x: auto;
-  padding-bottom: 15px;
-  scrollbar-width: thin;
-  scrollbar-color: #ff4d6d #1a0309;
-}
-
-.project-grid::-webkit-scrollbar {
-  height: 6px;
-}
-
-.project-grid::-webkit-scrollbar-track {
-  background: #1a0309;
-  border-radius: 10px;
-}
-
-.project-grid::-webkit-scrollbar-thumb {
-  background: #ff4d6d;
-  border-radius: 10px;
-}
-
-.project-grid::-webkit-scrollbar-thumb:hover {
-  background: #e33052;
-}
-
-/* Project section override */
-.projects {
-  overflow: visible;
-}
-
-.projects .project-grid {
-  flex-wrap: nowrap;
 }
 
 .project-card {
@@ -684,9 +654,6 @@ h1, h2, h3 {
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
-  min-width: 380px;
-  max-width: 450px;
-  flex-shrink: 0;
 }
 
 .project-card::before {
@@ -747,16 +714,13 @@ h1, h2, h3 {
 /* Featured project card */
 .project-card-featured {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   padding: 0;
   overflow: hidden;
-  min-width: 420px;
-  max-width: 500px;
-  flex-shrink: 0;
 }
 
 .project-card-featured .project-img {
-  flex: 0 0 180px;
+  flex: 0 0 320px;
   position: relative;
   overflow: hidden;
 }
