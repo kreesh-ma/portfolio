@@ -17,12 +17,25 @@ body {
   color: #ffffff;
   padding-top: 0px;
   overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d6d #1a0309;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1a0309;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff4d6d;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #e33052;
 }
 
 body::before {
