@@ -8,15 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Lock page scroll - navigation only via buttons
-window.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
-window.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
-window.addEventListener('keydown', (e) => {
-  if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(e.key)) {
-    e.preventDefault();
-  }
-});
-
 // Navbar background on scroll
 window.addEventListener('scroll', function() {
   const navbar = document.querySelector('.navbar');
