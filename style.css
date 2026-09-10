@@ -870,27 +870,6 @@ h1, h2, h3 {
   background: #e33052;
 }
 
-/* Projects section scroll */
-.projects .cert-scroll-wrapper {
-  max-height: 700px;
-  overflow-y: auto;
-  padding-right: 15px;
-}
-
-.projects .cert-scroll-wrapper::-webkit-scrollbar {
-  width: 8px;
-}
-
-.projects .cert-scroll-wrapper::-webkit-scrollbar-track {
-  background: #1a0309;
-  border-radius: 10px;
-}
-
-.projects .cert-scroll-wrapper::-webkit-scrollbar-thumb {
-  background: #ff4d6d;
-  border-radius: 10px;
-}
-
 @media (max-width: 900px) {
   .project-card-featured {
     flex-direction: column;
