@@ -667,6 +667,15 @@ h1, h2, h3 {
   background: #e33052;
 }
 
+/* Project section override */
+.projects {
+  overflow: visible;
+}
+
+.projects .project-grid {
+  flex-wrap: nowrap;
+}
+
 .project-card {
   background: linear-gradient(160deg, #2b0410, #1a0309);
   padding: 28px;
@@ -738,16 +747,16 @@ h1, h2, h3 {
 /* Featured project card */
 .project-card-featured {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   padding: 0;
   overflow: hidden;
-  min-width: 500px;
-  max-width: 600px;
+  min-width: 420px;
+  max-width: 500px;
   flex-shrink: 0;
 }
 
 .project-card-featured .project-img {
-  flex: 0 0 320px;
+  flex: 0 0 180px;
   position: relative;
   overflow: hidden;
 }
